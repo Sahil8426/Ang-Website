@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: '[app-test]',
-  template:`<h2>Hello</h2> 
+  template:`<h2></h2> 
   <input type = "text" value = Sahil>
  
   <input [disabled] = "isDisabled" id = "{{myId}}" type = "text" value = "This Block Is Disabled">`,
@@ -28,4 +28,10 @@ public isDisabled = "true";
   ngOnInit(): void {
   }
 
+}
+
+var city = prompt("Please enter you city");
+    
+if (city != null) {
+    alert( city );
 }
